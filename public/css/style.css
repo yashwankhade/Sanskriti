@@ -161,3 +161,7 @@ li a {
     object-fit: cover;
     height: 100%;
 }
+.btn{
+  background-color: red;
+  margin:auto;
+}
