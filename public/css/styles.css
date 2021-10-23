@@ -1,0 +1,26 @@
+img.first_image{
+  width:15rem;
+  height:100%;
+}
+
+h1{
+  color:red;
+}
+
+.card{
+  margin:4rem 10rem 4rem 10rem;
+}
+
+hr{
+  margin:auto;
+  border-top: 2px solid orange;
+  width: 10rem;
+}
+
+.about p{
+  margin:0 10rem;
+}
+
+input{
+  display:block;
+}

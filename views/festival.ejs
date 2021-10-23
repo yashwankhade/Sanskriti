@@ -1,0 +1,42 @@
+<%- include('header') -%>
+
+<%  festivals.forEach(function(festival){ %>
+  <div class="card mb-3" style="max-width: 100%;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="diwali-fest.jpg" class="img-fluid rounded-start" alt="diwali-fest">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title"><%= festival.name %></h5>
+            <p class="card-text">Celebrated when: <%= festival.celebrated_when %></p>
+            <p class="card-text">Region: <%= festival.region %></p>
+            <p class="card-text">Information: <%= festival.info.substring(0,198) %>...</p>
+            <a href="/festivals/<%=festival.name %>" class="btn btn-full">read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <% }) %>
+
+
+
+<div class="card mb-3" style="max-width: 100%;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="diwali-fest.jpg" class="img-fluid rounded-start" alt="diwali-fest">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"><%= festival.name %></h5>
+          <p class="card-text"><%= festival.date %></small></p>
+          <p class="card-text"><%= festival.description.substring(0,198) %>...</p>
+          <a href="#" class="btn btn-full">read more</a>
+        </div>
+      </div>
+    </div>
+  </div>

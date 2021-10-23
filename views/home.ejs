@@ -1,11 +1,56 @@
 <%- include("header") -%>
 
-<div class="landing d-flex justify-content-between">
-  <div class="item">
-    <p>hello</p>
+<div class="landing d-flex justify-content-evenly mt-5 flex-wrap">
+  <div class="item mt-9 d-flex align-items-center">
+    <h1>Anekta<br> mein Ekta</h1>
   </div>
   <div class="item">
-    <p>hello</p>
+
+    <img class="first_image" src="hero-image.png" alt="">
   </div>
 
+</div>
+
+<div class="upcoming m-4">
+  <h2 class="text-center">Upcoming Festivals</h2>
+  <hr>
+  <div class="card d-flex m-12 flex-row">
+    <div class="image">
+          <img class="first_image" src="diwali-fest.jpg" alt="">
+    </div>
+
+    <div class="info ms-5">
+      <h3><%= festival.name %></h3>
+      <p><%= festival.date %></p>
+      <p><%= festival.description %></p>
+      <button>Read more..</button>
+    </div>
+  </div>
+
+</div>
+
+<div class="about text-center">
+  <h3>About</h3>
+  <hr>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nulla tempore accusamus delectus magnam nesciunt, minus explicabo quisquam corporis reiciendis ut corrupti ea maxime quo, neque. Optio modi, nam eveniet!</p>
+</div>
+
+<div class="subscribe">
+  <h3 class="text-center">Subscribe</h3>
+  <div class="card d-flex flex-row">
+  <div class="image">
+  <img class="first_image" src="diwali-fest.jpg" alt="">
+  </div>
+  <div class="ms-5">
+  <form action="">
+  <label for="name">Name</label>
+  <input id="name" type="text">
+  <label for="email">Email</label>
+  <input id="email" type="email">
+  <label for="phone">Phone number</label>
+  <input id="phone" type="phone">
+  <input type="submit" value="Sign up">
+  </form>
+  </div>
+</div>
 </div>

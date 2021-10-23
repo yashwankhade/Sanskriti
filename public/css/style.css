@@ -1,0 +1,163 @@
+/*
+backgound color : #191923
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #191923;
+    font-family: 'Poppins', sans-serif;
+    color: #f1f1f1;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* REUSABLE */
+h1 {
+    font-size: 355.55%;
+}
+
+section {
+    padding: 50px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 200%;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 54px;
+    margin-bottom: 50px;
+}
+h2:after { /*Desplays after h2*/
+    display: block;
+    height: 2px;
+    background-color: #FF8A00;
+    content: " "; /* No words ****imp**** */
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 3px;
+}
+
+.btn {
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.btn-full {
+    background-color: #FF8A00;
+    border: 1px solid #FF8A00;
+    transition: background-color 0.3s, border 0.3s;
+    -webkit-transition: background-color 0.3s, border 0.3s;
+    -moz-transition: background-color 0.3s, border 0.3s;
+    -ms-transition: background-color 0.3s, border 0.3s;
+    -o-transition: background-color 0.3s, border 0.3s;
+}
+
+.btn-ghost {
+    background-color: #ff880000;
+    border: 1px solid #FF8A00;
+    transition: background-color 0.3s, border 0.3s;
+    -webkit-transition: background-color 0.3s, border 0.3s;
+    -moz-transition: background-color 0.3s, border 0.3s;
+    -ms-transition: background-color 0.3s, border 0.3s;
+    -o-transition: background-color 0.3s, border 0.3s;
+}
+
+.btn-full:hover {
+    color: #f1f1f1;
+    background-color: #d87300;
+    border: 1px solid #d87300;
+}
+
+.btn-ghost:hover {
+    color: #f1f1f1;
+    background-color: #FF8A00;
+}
+
+/* NAVIGATION */
+
+nav {
+    margin-top: 27px;
+}
+
+.logo {
+    width: 220.58px;
+}
+
+
+.main-nav li {
+    margin-left: 40px;
+}
+
+li a {
+    text-transform: uppercase;
+}
+
+/* HERO SECTION */
+
+.header-hero {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.orange-text {
+    color: #FF8A00;
+}
+.hero-text p {
+    width: 631px;
+    color: #656565;
+    font-size: 133.33%;
+    line-height: 120%;
+    margin-bottom: 40px;
+}
+
+.left-hero {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+}
+
+/* FESTIVALS SECTION */
+
+.section-festivals {
+    background-color: #1F1F2D;
+}
+
+.card-body {
+    padding: 25px 50px;
+}
+
+.card-title {
+    color: #FF8A00;
+    font-size: 177.77%;
+}
+
+.card-text {
+    color: #656565;
+    line-height: 120%;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.card img {
+    object-fit: cover;
+    height: 100%;
+}

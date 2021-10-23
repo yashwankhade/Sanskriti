@@ -1,0 +1,59 @@
+<%- include("header") -%>
+        </div>
+
+        <div class="header-hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-10 mx-auto">
+                        <div class="left-hero">
+                            <div class="hero-text">
+                                <h1><span class="orange-text">Anek</span>ta<br>Main <span class="orange-text">Ek</span>ta</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                            <div class="hero-btn">
+                                <a href="#" class="btn btn-full">subscribe</a>
+                                <a href="#" class="btn btn-ghost">learn more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- right side -->
+                    <div class="col-lg-6 col-10 mx-auto">
+                        <img src="hero-image.png" alt="hero-festival-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-festivals">
+        <div class="container">
+            <h2 class="section-title">upcoming festivals</h2>
+
+            <div class="card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="diwali-fest.jpg" class="img-fluid rounded-start" alt="diwali-fest">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title"><%= festival.name %></h5>
+                      <p class="card-text"><%= festival.date %></small></p>
+                      <p class="card-text"><%= festival.description %></p>
+                      <a href="#" class="btn btn-full">read more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
