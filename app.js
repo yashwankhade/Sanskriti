@@ -1,6 +1,9 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
+import express from 'express';
+import bodyParser from 'body-parser';
+import _ from "lodash";
+import { CourierClient } from "@trycourier/courier";
+
+const courier = CourierClient({ authorizationToken: "dk_prod_6XTAWTETF648P3GBSFDWNBKKY17P" });
 const festivals = [
 {
     "name": "Diwali",
@@ -79,13 +82,35 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/festivals',(req,res)=>{
-  res.render('festival',{festivals:festivals, festival:festival});
+  res.render('festival',{festivals:festivals});
 })
 
 app.get('/products',(req,res)=>{
   res.render('products',{})
 })
 
+app.get("/festivals/:festivalName", function(req, res){
+  const requestedTitle = _.lowerCase(req.params.festivalName);
+
+  festivals.forEach(function(festival){
+    const storedTitle = _.lowerCase(festival.name);
+
+    if (storedTitle === requestedTitle) {
+      res.render("page", {
+      "name":festival.name,
+      "celebrate":festival.celebrated_when,
+      "info":festival.info,
+      "image":festival.imagelink
+      });
+    }
+  });
+
+});
+
+app.post('/',(req,res)=>{
+  
+  console.log(req.body.fname)
+})
 app.listen(8080,()=>{
   console.log("Hello");
 })

@@ -1,1 +1,20 @@
 <%- include('header') -%>
+
+<section class="festival-form">
+        <div class="container">
+            <h3 class="fest-title"><%= name %></h3>
+            <p class="date"></p>
+            <div class="line"></div>
+            <div class="row">
+                <div class="col-md-8">
+                <p class="whereCelebrated">Celebrated <span class="region"><%=  %></span></p>
+                <p class="fest-info"><%= info %></p>
+                    <a href="/#festival_form" class="btn btn-full">notify me</a>
+                </div>
+                <div class="col-md-4">
+                    <img src="<%= image %>" alt="festival image" class="fest-img">
+
+                </div>
+            </div>
+        </div>
+    </section>
