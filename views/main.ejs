@@ -12,8 +12,8 @@
                                     incididunt ut labore et dolore magna aliqua.</p>
                             </div>
                             <div class="hero-btn">
-                                <a href="#" class="btn btn-full">subscribe</a>
-                                <a href="#" class="btn btn-ghost">learn more</a>
+                                <a href="#festival_form" class="btn btn-full">subscribe</a>
+                                <a href="/signup" class="btn btn-ghost">Add festival</a>
                             </div>
                         </div>
                     </div>
@@ -48,89 +48,53 @@
               </div>
         </div>
     </section>
-
-    <section class="festival-form" id="festival_form">
-      <form class="" action="/" method="post">
+    <section class= "section-about" id="about">
         <div class="container">
-            <div class="form-card">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="mb-3">
+            <h2 class="section title">about</h2>
+            <p> &nbsp; &nbsp; &nbsp; Festival promotes diversity so we do. We are bringing a platform so that you won't miss out on a single festival. Yes! Here we are presenting <span class="orange-text">Sanskriti</span>. What is exactly sanskriti? Sanskriti means culture. In all over the world every country has its own culture. Our website will be showing you the Indian culture effortlessly. We will notify you all the information to your doorstep that which festival is coming next! So that you can be ready for celebrating the coming festival with perfect preparations. You'll know it just by subscribing us in a simple way.<br><br>
+            &nbsp; &nbsp; &nbsp; Through your busy schedule it's very hard to keep an eye on calendar looking for a festival, so sit back , relax and wait for our updates. To get festival updates do subscribe our newsletter.
+            </p>
+        </div>
+    </section>
+    <section class="section-subscribe" id="festival_form">
+        <div class="container">
+            <h2 class="section-title">get notified</h2>
 
-
-
-                            <label for="fname"  class="form-label input-title">First Name</label>
-                            <input type="text" class="form-control input-box" id="fname" placeholder="John">
-                        </div>
+            <div class="card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src="form-image.jpg" class="img-fluid rounded-start form-img" alt="diwali-fest">
                     </div>
                     <div class="col-md-6">
-                        <div class="mb-3">
-                            <label for="lname" class="form-label input-title">Last Name</label>
-                            <input type="text" class="form-control input-box" id="lname" placeholder="Wick">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label for="name" class="form-label input-title">Your Name</label>
+                                <input type="text" class="form-control input-box" id="name"
+                                    placeholder="John Wick">
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailID" class="form-label input-title">Email ID</label>
+                                <input type="email" class="form-control input-box" id="emailID"
+                                    placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="phoneNumber" class="form-label input-title">Phone Number</label>
+                                <input type="tel" class="form-control input-box" id="phoneNumber"
+                                    placeholder="+91 98765 43210">
+                            </div>
+                            <!-- <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div> -->
+                            <button type="submit" class="btn btn-full submit-btn">read more</button>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label for="emailID" class="form-label input-title">Email ID</label>
-                            <input type="email" class="form-control input-box" id="emailID"
-                                placeholder="name@example.com">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label for="phoneNumber" class="form-label input-title">Mobile No.</label>
-                            <input type="tel" class="form-control input-box" id="phoneNumber"
-                                placeholder="+91 98765 43210">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label for="fistivalName" class="form-label input-title">Name of The Festival</label>
-                            <input type="email" class="form-control input-box" id="fistivalName" placeholder="Diwali">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label for="timeFestical" class="form-label input-title">When It's Celeberated</label>
-                            <input type="text" class="form-control input-box" id="timeFestical"
-                                placeholder="Near October or November">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label for="fistivalPlace" class="form-label input-title">Where it's Celeberated</label>
-                            <input type="email" class="form-control input-box" id="fistivalPlace"
-                                placeholder="All over India">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label for="fistivalImage" class="form-label input-title">Paste Image Link of the Festival</label>
-                            <input type="url" class="form-control input-box" id="fistivalImage"
-                                placeholder="https://example.com/">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="mb-3">
-                        <label for="festivalArtical" class="form-label input-title">Information about Festival</label>
-                        <textarea class="form-control input-box textarea-box" id="festivalArtical" rows="10"></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <input type="submit" class="btn btn-full submit-btn fest-article-btn">
                 </div>
             </div>
-              </form>
+        </div>
     </section>
 
-
+<%- include("footer") -%>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

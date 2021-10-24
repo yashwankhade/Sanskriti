@@ -107,8 +107,12 @@ app.get("/festivals/:festivalName", function(req, res){
 
 });
 
+
+app.get('/signup',(req,res)=>{
+  res.render('signup',{})
+})
 app.post('/',(req,res)=>{
-  
+
   console.log(req.body.fname)
 })
 app.listen(8080,()=>{
